@@ -1,0 +1,23 @@
+{
+  "name": "aism-finetuning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "cd frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node server.js\" \"cd frontend && npm start\"",
+    "start-server": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "gpt-tokenizer": "^2.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
